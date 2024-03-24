@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Aplicacion {
     public static void main(String[]args){
-        LaboratorioBacterias laboratorio=new LaboratorioBacterias();
+        PoblacionBacterias poblacion=new PoblacionBacterias();
+        ExperimentoBacterias experimentoBacterias=new ExperimentoBacterias();
         Scanner scanner=new Scanner((System.in));
 
         int opcion;
@@ -50,4 +51,4 @@ public class Aplicacion {
             scanner.close();
         }
     }
-}
+
