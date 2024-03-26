@@ -96,4 +96,32 @@ public class ExperimentoBacterias {
                 ", luminosidad=" + luminosidad +
                 '}';
     }
+
+    public void anadirPoblacion(PoblacionBacterias p){
+        this.poblacion.add(p);
+    }
+
+    public void visualizarPoblacion(){
+        for (int i=0; i< poblacion.size();i++){
+            System.out.println(poblacion.get(i).getNombre());
+        }
+    }
+
+    public void eliminarPoblacion(String nombre){
+        for (int i=0;i<poblacion.size();i++){
+            if (poblacion.get(i).getNombre().equals(nombre)) {
+                poblacion.remove(poblacion.get(i));
+                break;
+            }
+        }
+
+    }
+    public void informacionDetallada(String nombre){
+        for (int i=0; i<poblacion.size();i++){
+            if (poblacion.get(i).getNombre().equals(nombre)){
+                System.out.println(poblacion.get(i).toString());
+            }
+        }
+
+    }
 }

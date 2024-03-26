@@ -6,8 +6,11 @@ public class PoblacionBacterias extends ExperimentoBacterias {
     public PoblacionBacterias(int numeroBacterias){
         super();
         this.numeroBacterias=numeroBacterias;
+    }
 
-
+    @Override
+    public String toString() {
+        return  super.toString();
     }
 
     public int getNumeroBacterias() {

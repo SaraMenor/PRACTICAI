@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Aplicacion {
     public static void main(String[]args){
         PoblacionBacterias poblacion=new PoblacionBacterias();
-        ExperimentoBacterias experimentoBacterias=new ExperimentoBacterias();
+
         Scanner scanner=new Scanner((System.in));
 
         int opcion;
@@ -26,8 +26,11 @@ public class Aplicacion {
                 case 1:
                     break;
                 case 2:
+                    ExperimentoBacterias experimentoBacterias=new ExperimentoBacterias();
+
                     break;
                 case 3:
+
                     break;
                 case 4:
                     break;
